@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1 Enter an RSS Link
+
+  div
+  form(action='/stories',method='post')
+    div(data-role='fieldcontain')
+      fieldset(data-role='controlgroup')
+        label(for='rssLink')
+           input(id='rssLink', class='form-control', type='text',value='',placeholder='http://timesofindia.indiatimes.com/rss.cms',name='rssLink', required, autofocus, size='100')
+    br
+    div(data-role='fieldcontain')   
+      input(class='btn btn-primary', type='submit',value='Get Data',data-transition='fade', data-theme='c')
