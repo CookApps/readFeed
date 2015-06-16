@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 var DataAccess = {};
-mongoose.connect('mongodb://127.0.0.1/feeds');
+mongoose.connect('mongodb://localhost/feeds');
 
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
